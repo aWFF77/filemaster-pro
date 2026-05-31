@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FileMaster Pro — 批量文件重命名、智能分类、格式转换。一次付费 ¥49，终身使用。" />
+  <title>FileMaster Pro - 文件批量处理工具</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.6; }
+    .container { max-width: 880px; margin: 0 auto; padding: 60px 24px; }
+    .hero { text-align: center; margin-bottom: 60px; }
+    .logo { width: 72px; height: 72px; background: linear-gradient(135deg, #2563eb, #1d4ed8); border-radius: 18px; display: inline-flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    h1 { font-size: 36px; margin-bottom: 12px; }
+    .subtitle { font-size: 18px; color: #64748b; margin-bottom: 30px; }
+    .cta-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 14px 32px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all .2s; cursor: pointer; border: none; }
+    .btn-primary { background: #2563eb; color: white; }
+    .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(37,99,235,.3); }
+    .btn-secondary { background: white; color: #2563eb; border: 2px solid #2563eb; }
+    .btn-secondary:hover { background: #eff6ff; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 60px; }
+    .feature-card { background: white; border-radius: 16px; padding: 28px 24px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+    .feature-icon { font-size: 36px; margin-bottom: 12px; }
+    .feature-title { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .feature-desc { font-size: 14px; color: #64748b; }
+    .pricing { background: white; border-radius: 16px; padding: 40px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 60px; }
+    .price-tag { font-size: 48px; font-weight: 800; color: #2563eb; }
+    .price-unit { font-size: 18px; color: #64748b; }
+    .howto { background: white; border-radius: 16px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 40px; }
+    .howto h3 { margin-bottom: 20px; }
+    .step { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
+    .step-num { width: 32px; height: 32px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+    .step-content { font-size: 15px; }
+    .step-content code { background: #f1f5f9; padding: 2px 8px; border-radius: 4px; font-size: 13px; }
+    .footer { text-align: center; color: #94a3b8; font-size: 13px; margin-top: 40px; }
+    .badge { display: inline-block; background: #dcfce7; color: #16a34a; padding: 2px 10px; border-radius: 20px; font-size: 13px; font-weight: 500; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="logo">FM</div>
+    <h1>FileMaster Pro</h1>
+    <p class="subtitle">批量重命名 · 智能分类 · 格式转换 · 信息提取<br>纯本地运行，文件绝不上传</p>
+    <div class="cta-group">
+      <a href="./app/" class="btn btn-primary">🚀 立即使用（在线版）</a>
+      <a href="./filemaster-pro.zip" class="btn btn-secondary">📥 下载离线版</a>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🗂️</div>
+      <div class="feature-title">智能分类</div>
+      <div class="feature-desc">按文件名/类型/日期自动归类，支持自定义规则</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✏️</div>
+      <div class="feature-title">批量重命名</div>
+      <div class="feature-desc">查找替换、序号、前缀后缀，实时预览</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📋</div>
+      <div class="feature-title">信息提取</div>
+      <div class="feature-desc">邮箱、手机号、身份证…正则批量提取</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <div class="feature-title">隐私安全</div>
+      <div class="feature-desc">100% 本地处理，无需上传任何文件</div>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div class="pricing">
+    <span class="badge">终身买断</span>
+    <div style="margin: 16px 0 4px;"><span class="price-tag">¥49</span> <span class="price-unit">/ 永久</span></div>
+    <p style="color:#64748b;margin-bottom:20px">一次付费，终身使用。免费版限 30 个文件。</p>
+    <div class="cta-group">
+      <a href="https://buy.poor.dev" class="btn btn-primary">💳 立即购买</a>
+    </div>
+  </div>
+
+  <!-- How to use -->
+  <div class="howto">
+    <h3>📖 使用方式</h3>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content"><strong>下载</strong> — 点击上方「下载离线版」，解压到任意文件夹</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content"><strong>运行</strong> — 双击 <code>index.html</code>（需 Chrome/Edge 浏览器），或用 <code>npx serve .</code> 启动本地服务</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content"><strong>激活</strong> — 购买后获得激活码，在设置页输入即可解锁专业版</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    FileMaster Pro © 2026 · 纯本地工具 · 无后台 · 无数据采集
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/app", "destination": "/dist/renderer/index.html" },
+    { "source": "/app/(.*)", "destination": "/dist/renderer/$1" }
+  ],
+  "headers": [
+    {
+      "source": "/filemaster-pro.zip",
+      "headers": [
+        { "key": "Content-Type", "value": "application/zip" },
+        { "key": "Content-Disposition", "value": "attachment; filename=\"filemaster-pro.zip\"" }
+      ]
+    }
+  ]
+}

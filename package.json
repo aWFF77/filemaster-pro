@@ -1,0 +1,30 @@
+{
+  "name": "filemaster-pro",
+  "version": "1.0.0",
+  "description": "FileMaster Pro — 批量文件处理工具。重命名、分类、转换、提取",
+  "author": "FileMaster",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/generate-icons.mjs",
+    "build": "npm run prebuild && vite build",
+    "build:release": "node scripts/build-release.mjs",
+    "preview": "vite preview",
+    "deploy": "npm run build && vercel --prod"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "sharp": "^0.33.0",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5"
+  }
+}

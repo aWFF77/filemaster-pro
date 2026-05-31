@@ -1,0 +1,23 @@
+{
+  "name": "FileMaster Pro - 文件批量处理工具",
+  "short_name": "FileMaster Pro",
+  "description": "批量重命名、智能分类、格式转换、信息提取 — 纯本地处理，文件不上传",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "orientation": "any",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
