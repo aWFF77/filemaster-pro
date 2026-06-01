@@ -15,13 +15,7 @@
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased">
     <div id="root"></div>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./sw.js').catch(() => {})
-        })
-      }
-    </script>
+    
   <div id="fm-top-banner" style="background:linear-gradient(135deg,#2563eb,#1d4ed8);color:white;padding:10px 20px;text-align:center;font-size:14px;display:flex;align-items:center;justify-content:center;gap:14px;z-index:9999;position:relative"><span>点击此处安装到桌面，像普通软件一样使用</span><button id="fm-install-btn" style="background:white;color:#2563eb;border:none;padding:8px 20px;border-radius:8px;font-size:14px;font-weight:bold;cursor:pointer">安装到桌面</button><button id="fm-banner-close" style="background:transparent;color:white;border:1px solid rgba(255,255,255,.3);padding:5px 12px;border-radius:6px;font-size:12px;cursor:pointer">✕</button></div><div id="fm-upgrade-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#fff3cd;border-top:2px solid #ffc107;padding:10px 20px;text-align:center;font-size:13px;z-index:9998"><span style="color:#856404">免费版 · 已用 <b id="fm-used">0</b>/50 个文件 · </span><button onclick="alert('FileMaster Pro 专业版
 
 ¥49 永久买断，解锁无限文件处理
