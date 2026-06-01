@@ -48,8 +48,8 @@ export default function UpgradeModal({ onClose, onActivated }: Props) {
               {!isNaN(slots) && (
                 <div className="mb-5">
                   <div className="flex justify-between text-xs text-slate-500 mb-1.5">
-                    <span>免费额度已用</span>
-                    <span>{FREE_LIMIT - slots} / {FREE_LIMIT} 个文件</span>
+                    <span>免费次数已用</span>
+                    <span>{FREE_LIMIT - slots} / {FREE_LIMIT} 次</span>
                   </div>
                   <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
                     <div
