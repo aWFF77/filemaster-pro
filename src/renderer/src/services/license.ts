@@ -1,11 +1,11 @@
 // ─── License Service ──────────────────────────
-// Free: 3 次使用，每次不限文件数, Pro: ¥49 lifetime
+// Free: 50 个文件, Pro: ¥49 lifetime
 // Key format: FMP-SSSS-XXXX-CC (SSSS=serial, XXXX=random, CC=checksum)
 
 const STORAGE_KEY = 'filemaster_license'
-const COUNT_KEY = 'filemaster_use_count'
+const COUNT_KEY = 'filemaster_file_count'
 const USED_KEY = 'filemaster_used_keys' // locally-tracked used serials
-const FREE_LIMIT = 3
+const FREE_LIMIT = 50
 const PRICE = 49
 
 interface LicenseState {
@@ -186,7 +186,7 @@ export function getFileCount(): number {
   try { return parseInt(localStorage.getItem(COUNT_KEY) || '0', 10) } catch { return 0 }
 }
 
-export function addUseCount(count: number): void {
+export function addFileCount(count: number): void {
   if (isLicensed()) return
   localStorage.setItem(COUNT_KEY, String(getFileCount() + count))
 }
